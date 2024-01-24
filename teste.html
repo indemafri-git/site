@@ -1,0 +1,61 @@
+{
+    "header": "My Site",
+    "button": "Switch to Spanish"
+  }
+
+  {
+    "header": "Mi Sitio",
+    "button": "Cambiar a inglés"
+  }
+    
+  <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Troca de Idioma</title>
+    <script>
+        // Objeto para armazenar as traduções
+        var translations = {};
+
+        // Função para carregar traduções com base no idioma
+        function carregarTraducoes(idioma) {
+            // Use Ajax ou outra abordagem para carregar o arquivo JSON com as traduções
+            // Neste exemplo, carregaremos diretamente os arquivos JSON
+            var arquivoTraducoes = idioma === 'es' ? 'translations_es.json' : 'translations.json';
+
+            // Simulação de carregamento de arquivo JSON
+            var request = new XMLHttpRequest();
+            request.open('GET', arquivoTraducoes, false);
+            request.send(null);
+
+            if (request.status === 200) {
+                translations = JSON.parse(request.responseText);
+            }
+        }
+
+        // Função para trocar o idioma
+        function trocarIdioma(idioma) {
+            carregarTraducoes(idioma);
+
+            // Atualizar o conteúdo com as traduções
+            document.getElementById('header').innerHTML = translations.header;
+            document.getElementById('button').innerHTML = translations.button;
+        }
+    </script>
+</head>
+<body>
+
+    <h1 id="header">My Site</h1>
+    
+    <!-- Botão para trocar para Espanhol -->
+    <button onclick="trocarIdioma('es')" id="button">Switch to Spanish</button>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore odit nihil, omnis voluptatem hic ipsum minima laborum repudiandae illo ducimus dignissimos saepe consectetur maxime! Molestiae ea cumque adipisci ipsam necessitatibus?
+</p>
+    <script>
+        // Carregar as traduções iniciais (por exemplo, inglês)
+        carregarTraducoes('en');
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+  /* Estilos para o botão de alternância */
+  .collapsible {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+/* Estilos para o conteúdo recolhível */
+.content {
+    display: none;
+    padding: 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 50%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produtos {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.sobre-nos {
+    background-color: #eee;
+    padding: 40px;
+}
+
+.sobre-nos p {
+   text-indent: 15px;
+   margin-bottom: 01;
+
+}
+
+.contato {
+    background-color: #fff;
+    padding: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

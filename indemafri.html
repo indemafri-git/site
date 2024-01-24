@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indústria de Máquinas Alimentícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo à Indemafri, frabrica de Máquinas Indústriais Alimentícias</h1>
+        <img src="img/logo.png" alt="logo"
+            style="background-color: #ffffffb0 ;  position: absolute; top: 05px; left: 10px; width: 150px; height: 120px;">
+        <nav>
+            <ul>
+                <li><a href="indemafri.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="teste.html">Teste</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="img/Design sem nome.jpg" alt="">
+        <h2>Construindo Máquinas para a Indústria Alimentícia</h2>
+    </section>
+
+
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Descubra nossa ampla variedade de máquinas alimentícias de alta qualidade, projetadas para atender às
+            necessidades da sua indústria.</p>
+        <ul>
+            <li><button class="collapsible">Clique para Expandir</button>
+                <div class="content">
+                    <p>Aqui está o conteúdo recolhível. Você pode adicionar qualquer texto, imagens, formulários ou
+                        outros elementos HTML aqui.</p>
+                </div>
+
+                <script>
+                    var coll = document.querySelector(".collapsible");
+                    var content = document.querySelector(".content");
+
+                    coll.addEventListener("click", function () {
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                </script>
+            </li>
+        </ul>
+    </section>
+
+    <section class="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>A Indemafri destaca-se no cenário empresarial por meio da excelência em seus serviços, consolidando uma
+            reputação notável no mercado. Ao oferecer uma ampla gama de soluções, a empresa demonstra um compromisso
+            firme com a satisfação do cliente e a entrega de resultados excepcionais.</p>
+
+            <p>A abordagem da Indemafri baseia-se em princípios fundamentais que a diferenciam no setor. Primeiramente,
+            investe continuamente em tecnologias de ponta, mantendo-se na vanguarda das inovações relevantes para seus
+            serviços. Isso não apenas aprimora a eficiência operacional, mas também proporciona aos clientes acesso a
+            soluções modernas e adaptáveis.</p>
+
+            <p>A equipe altamente qualificada da Indemafri é um pilar essencial de seu sucesso. Profissionais
+            especializados, com expertise nas mais diversas áreas, trabalham de forma colaborativa para garantir que
+            cada serviço atenda e supere as expectativas dos clientes. Além disso, a empresa enfatiza o desenvolvimento
+            profissional contínuo de sua equipe, assegurando que estejam sempre atualizados com as tendências e demandas
+            do mercado.</p>
+
+            <p>A transparência e a ética estão intrinsecamente incorporadas à filosofia da Indemafri. Todas as interações
+            com os clientes são pautadas pela honestidade, desde a apresentação das propostas até a execução dos
+            serviços. Isso contribui para a construção de relacionamentos sólidos e duradouros, fundamentais para o
+            crescimento sustentável da empresa.</p>
+
+             <p>No âmbito operacional, a Indemafri adota práticas ágeis e flexíveis, garantindo a adaptabilidade aos
+            desafios em constante evolução do ambiente de negócios. Seu comprometimento com a qualidade resulta em
+            entregas pontuais e eficazes, atendendo aos mais altos padrões do setor.</p>
+
+        <p>Dessa forma, a Indemafri consolida sua posição como referência, não apenas pelos serviços prestados, mas
+            também pela integridade, inovação e comprometimento que permeiam todas as suas operações. Esses valores
+            fundamentais, aliados a uma abordagem centrada no cliente, solidificam a posição da Indemafri como líder
+            exemplar em seu segmento.</p>
+    </section>
+
+    <section class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para responder a todas as suas perguntas. Entre em contato conosco para obter mais informações
+            sobre nossos produtos e serviços.</p>
+        <a href="contato.html">Página de Contato</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Indemafri Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
